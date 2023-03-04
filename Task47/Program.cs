@@ -4,7 +4,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите число столбцов двумерного массива: ");
 int m = Convert.ToInt32(Console.ReadLine());
 
-if (n==0 || m==0) System.Console.WriteLine("У двумерного массива должна быть хотя бы 1 строка или 1 столбец");
+if (n<0 || m<0) System.Console.WriteLine("У двумерного массива должна быть хотя бы 1 строка или 1 столбец");
 else 
 {
 double[,] resultMatrix = GetMatrix(n, m);
